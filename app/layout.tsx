@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-
+import { SideBarNav, TopBarNav } from "@/components/rootlayout";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -15,14 +15,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <TopBarNav></TopBarNav>
+        <div className="flex">
+          <SideBarNav></SideBarNav>
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
-
-//Top Bar Component
-//This component needs to receive the logged in persons profile picture and name
-
-//SideBar Component
-//Needs to have a slide in and slide out
-//Needs to have an enabled and disabled generate button
