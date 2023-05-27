@@ -52,8 +52,9 @@ const AccordionContent = React.forwardRef<
     )}
     {...props}
   >
-    <div className="pb-4 pt-0 bg-nord3 bg-opacity-50">
-    </div>
+    <textarea placeholder={props.placeholder} className="focus:outline-none border-[1px] border-nord3 text-nord10 placeholder-nord10 resize-none p-2 bg-nord0 bg-opacity-80 w-full h-40 ">
+
+    </textarea>
   </AccordionPrimitive.Content>
 ))
 AccordionContent.displayName = AccordionPrimitive.Content.displayName

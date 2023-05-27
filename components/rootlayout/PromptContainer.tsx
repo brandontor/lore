@@ -15,14 +15,14 @@ function PromptContainer({}: Props) {
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
           <AccordionTrigger>Positive Prompt</AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent placeholder="What do you want to see?">
           </AccordionContent>
         </AccordionItem>
       </Accordion>
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
           <AccordionTrigger>Negative Prompt</AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent placeholder="What don't you want to see?">
           </AccordionContent>
         </AccordionItem>
       </Accordion>
