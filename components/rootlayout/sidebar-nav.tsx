@@ -11,9 +11,15 @@ type Props = {};
 
 const LinksContainer = () => {
   return (
-    <div className="w-full border-t-[1px] border-nord3">
-      <Github></Github>
-      <Twitter></Twitter>
+    <div className="w-full border-t-[1px] border-nord3 flex justify-center p-2 ">
+      <div className="flex cursor-pointer text-nord9">
+        <a href="https://github.com/brandontor">
+          <Github></Github>
+        </a>
+        <a href="https://twitter.com/bTCodes">
+          <Twitter></Twitter>
+        </a>
+      </div>
     </div>
   );
 };
