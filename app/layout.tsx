@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <TopBarNav></TopBarNav>
-        <div className="flex">
+        <div className="flex h-[95%]">
           <SideBarNav></SideBarNav>
           {children}
         </div>
