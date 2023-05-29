@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { CreditCard, LogOut, PlusCircle, Settings, User } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -20,6 +22,7 @@ const ProfileMenu = () => {
     <DropdownMenu>
       <DropdownMenuTrigger className="flex items-center m-8 outline-none">
         <Button
+          asChild
           variant="ghost"
           className="relative h-8 w-8 rounded-full mr-4 outline-none"
         >
