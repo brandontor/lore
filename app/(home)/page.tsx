@@ -1,10 +1,30 @@
 import React from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 type Props = {};
 
 const CurrentContent = () => {
-  return <div>Hello Current</div>;
+  return (
+    <Card className="h-[650px] container mx-auto">
+      <CardHeader className="text-nord4 flex items-center">
+        <CardTitle>Sample book Title</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <p>Card Content</p>
+      </CardContent>
+      <CardFooter>
+        <p>Card Footer</p>
+      </CardFooter>
+    </Card>
+  );
 };
 
 const PreviousContent = () => {
@@ -14,7 +34,7 @@ const PreviousContent = () => {
 function IndexPage({}: Props) {
   return (
     <main className="container mx-auto py-8">
-      <Tabs defaultValue="current" className="w-[400 px]">
+      <Tabs defaultValue="current" className="w-[400 px] h-full">
         <TabsList>
           <TabsTrigger value="current">Current</TabsTrigger>
           <TabsTrigger value="previous">Previous</TabsTrigger>
