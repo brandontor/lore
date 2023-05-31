@@ -11,6 +11,14 @@ import {
 
 type Props = {};
 
+type BookCover = {
+  imageURL?: string;
+};
+
+const BookCover = (props: BookCover) => {
+  return <div>{props.imageURL ? <img></img> : <p>Hello World</p>}</div>;
+};
+
 const CurrentContent = () => {
   return (
     <Card className="h-[650px] container mx-auto">
@@ -18,7 +26,7 @@ const CurrentContent = () => {
         <CardTitle>Sample book Title</CardTitle>
       </CardHeader>
       <CardContent>
-        <p>Card Content</p>
+        <BookCover></BookCover>
       </CardContent>
       <CardFooter>
         <p>Card Footer</p>
